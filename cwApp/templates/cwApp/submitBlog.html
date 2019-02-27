@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{#creates a form #}
+<form  method="post">
+    {% csrf_token %}  {# security #}
+    {{submitForm.as_p}}  {# formats each input as a paragraph #}}
+    <button>Submit</button>
+</form>
+
+</body>
+</html>
